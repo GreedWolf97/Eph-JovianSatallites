@@ -9,7 +9,8 @@ pathpre = pwd;
 newpath = [pathpre '\spice\spice']; 
 load_spice_kernels(newpath); 
 
-%%
+%% 读取规则卫星的星历
+
 cal = [2036 1 2 3 4 5]; 
 jd = cal2jd(cal); 
 
@@ -25,3 +26,9 @@ rv = J20002jmeq_rv(rv_im_emeJ2000);
 rv_STK = [-1.01113e+06  -359315  -2258.41  3.64073  -10.2248  -0.011187]'; 
 
 rv - rv_STK
+
+%% 读取全部星历
+
+rvs = Eph_JovianSatellite(jd); 
+im2 = 91; 
+rvs(:, im2)
