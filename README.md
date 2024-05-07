@@ -14,6 +14,7 @@ Instruction: Chinese version first, then English version.
 位置：放在与基础文件相同目录下
 ![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/4debb83c-190d-4070-81b4-f1800ccbac13)
 在使用时将文件名重命名为如图所示。
+
 2，mice工具包
 mice工具包下载地址：https://naif.jpl.nasa.gov/naif/toolkit_MATLAB_PC_Windows_VisualC_MATLAB9.x_64bit.html
 解压后将名为mice、包含众多子文件的文件夹放在 当前目录/spice/spice 下，与名为 kernels 的文件夹并列
@@ -22,3 +23,26 @@ mice工具包下载地址：https://naif.jpl.nasa.gov/naif/toolkit_MATLAB_PC_Win
 ![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/e0be6d6f-602f-4b6c-b21e-9afcfa815d1d)
 
 两样文件就绪后，即可打开 Test.m，用来读取星历。该文件给出了一个示例。
+
+%%
+
+During my doctoral studies, I was involved in reading the ephemeris of Jupiter’s satellites. After multiple debugging sessions, I finally made it work and I am sharing it here for future reference. The code includes functions for reading the ephemeris, as well as basic functions related to orbit propagation and coordinate transformation.
+
+The code runs on Matlab 2020a.
+
+After downloading all the code, two additional files need to be prepared:
+
+1，Ephemeris File: 
+Due to Github’s file size restrictions, it cannot be uploaded to the repository and needs to be downloaded by the user. 
+The ephemeris can be downloaded from here. https://ssd.jpl.nasa.gov/sats/ephem/sep.html
+It includes: regular Jovian satellite jup365.bsp; irregular Jovian satellite jup344.bsp; and the 2023 addition jup346.bsp (Note: When I used the ephemeris around 2023, the “2023 addition” corresponded to the file jup345.bsp, it seems that JPL has updated it since then). The file should be placed in the same directory as the base file. 
+![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/4debb83c-190d-4070-81b4-f1800ccbac13)
+When using, rename the file as shown in the image.
+
+2，Mice Toolkit: The Mice toolkit can be downloaded from here. 
+After decompressing, place the folder named mice, which contains many subfiles, under current directory/spice/spice, parallel to the folder named kernels. 
+![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/50496d04-e87c-467f-9d52-f1b754422348)
+Note: Make sure there are many subfiles in the mice folder.
+![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/e0be6d6f-602f-4b6c-b21e-9afcfa815d1d)
+
+Once both files are ready, you can open Test.m to read the ephemeris. This file provides an example.
