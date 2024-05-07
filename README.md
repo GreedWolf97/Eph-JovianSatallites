@@ -12,7 +12,8 @@ Instruction: Chinese version first, then English version.
 
 打包下载所有代码后，还需准备两样文件：
 
-由于Github对上传文件大小的限制，不能一并上传至仓库，需要使用者自己下载
+由于Github对上传文件大小的限制，不能一并上传至仓库，需要使用者自己下载。若您有百度网盘，也可直接在这里下载：链接：https://pan.baidu.com/s/1c8_7qGzHTZPqf6xvGWRkUQ?pwd=2222 
+提取码：2222 
 
 1，星历文件
 
@@ -49,7 +50,8 @@ During my doctoral studies, I was involved in reading the ephemeris of Jupiter�
 The code runs on Matlab 2020a.
 
 
-After downloading all the code, two additional files need to be prepared:
+After downloading all the code, two additional files need to be prepared: (if you have BaiDu disk, you also can find them here: https://pan.baidu.com/s/1c8_7qGzHTZPqf6xvGWRkUQ?pwd=2222 
+code：2222 )
 
 
 1，Ephemeris File: 
