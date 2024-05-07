@@ -19,7 +19,7 @@ Instruction: Chinese version first, then English version.
 
 星历下载地址：https://ssd.jpl.nasa.gov/sats/ephem/sep.html
 
-包含：木星规则卫星 jup365.bsp；不规则木卫 jup344.bsp；2023新增 jup346.bsp（注：我于2023年左右使用星历时，“2023新增”对应的文件为 jup345.bsp，看来后来JPL更新过）
+包含：木星规则卫星（含伽利略卫星） jup365.bsp；不规则木卫 jup344.bsp；2023新增 jup346.bsp（注：我于2023年左右使用星历时，“2023新增”对应的文件为 jup345.bsp，看来后来JPL更新过）
 
 位置：放在与基础文件相同目录下
 
@@ -60,7 +60,7 @@ Due to Github’s file size restrictions, it cannot be uploaded to the repositor
 
 The ephemeris can be downloaded from here. https://ssd.jpl.nasa.gov/sats/ephem/sep.html
 
-It includes: regular Jovian satellite jup365.bsp; irregular Jovian satellite jup344.bsp; and the 2023 addition jup346.bsp (Note: When I used the ephemeris around 2023, the “2023 addition” corresponded to the file jup345.bsp, it seems that JPL has updated it since then). The file should be placed in the same directory as the base file. 
+It includes: regular Jovian satellite (include Galilean Moons) jup365.bsp; irregular Jovian satellite jup344.bsp; and the 2023 addition jup346.bsp (Note: When I used the ephemeris around 2023, the “2023 addition” corresponded to the file jup345.bsp, it seems that JPL has updated it since then). The file should be placed in the same directory as the base file. 
 
 ![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/4debb83c-190d-4070-81b4-f1800ccbac13)
 
@@ -78,4 +78,4 @@ Note: Make sure there are many subfiles in the mice folder.
 ![image](https://github.com/GreedWolf97/Eph-JovianSatallites/assets/58545028/e0be6d6f-602f-4b6c-b21e-9afcfa815d1d)
 
 
-Once both files are ready, you can open Test.m to read the ephemeris. This file provides an example.
+Once both files are ready, you can run Test.m to read the ephemeris. This file provides an example.
